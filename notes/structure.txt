@@ -1,0 +1,56 @@
+Suggested Structure
+1. Einleitung / Introduction (~10% of paper)
+
+Why digital sovereignty matters for the EU right now
+The core tension: cloud dependency vs. sovereign control
+Your research question and thesis
+
+
+2. Grundlagen / Background (~15%)
+
+What "digital sovereignty" means (define it clearly — it's a contested term)
+How cloud computing works and why states/institutions rely on it
+Key actors: hyperscalers (AWS, Azure, Google Cloud) and their market dominance
+
+
+3. Das Abhängigkeitsproblem / The Dependency Problem (~20%)
+
+Technical lock-in (APIs, proprietary formats, data gravity)
+Legal exposure — especially the US CLOUD Act and its extraterritorial reach over US-based providers
+Economic dependency: EU market share held by non-EU providers
+Strategic/political risks (geopolitical leverage, data access by foreign states)
+
+
+4. Bestehende Ansätze / Existing Approaches (~25%)
+
+GAIA-X — the EU's federated cloud initiative (and its limitations/criticisms)
+European Cloud providers (OVHcloud, Hetzner, IONOS) — viable alternatives?
+EUCS (EU Cloud Certification Scheme) — setting sovereignty standards
+Data Act & GDPR as regulatory levers
+Sovereign cloud offerings by hyperscalers (e.g. Microsoft Azure sovereign clouds) — are these enough?
+
+
+5. Kritische Bewertung / Critical Analysis (~20%)
+
+None of the existing approaches fully resolve the tension
+GAIA-X criticism: too slow, too fragmented, industry-captured
+Regulatory approaches don't eliminate technical dependency
+The realism argument: full technological independence may be neither feasible nor desirable
+
+
+6. Lösungsansätze / A Way Forward (~15%)
+
+Layered sovereignty: distinguish between data sovereignty, operational sovereignty, and strategic sovereignty — you don't need all three equally
+Open-source & interoperability standards to reduce lock-in
+EU investment in domestic cloud capacity (like the US CHIPS Act logic applied to cloud)
+International partnerships with like-minded democracies
+
+
+7. Fazit / Conclusion (~5%)**
+
+Restate the core argument
+Sovereignty doesn't mean autarky — it means managed dependency with credible exit options
+Policy recommendations in brief
+
+
+A framing tip: The most compelling argument you can make is probably that sovereignty is a spectrum, not a binary. The goal isn't to kick AWS out of Europe — it's to ensure the EU has enough leverage, legal protection, and alternatives that it is never coerced by its dependencies. That framing makes the paper analytically sharp and avoids naive tech-nationalism.
