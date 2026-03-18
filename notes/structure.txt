@@ -13,7 +13,7 @@ How cloud computing works and why states/institutions rely on it
 Key actors: hyperscalers (AWS, Azure, Google Cloud) and their market dominance
 
 
-3. Das Abhängigkeitsproblem / The Dependency Problem (~20%)
+3. Wie wird die digitale Souveränität durch Cloud Computing verletzt?(~20%)
 
 Technical lock-in (APIs, proprietary formats, data gravity)
 Legal exposure — especially the US CLOUD Act and its extraterritorial reach over US-based providers
