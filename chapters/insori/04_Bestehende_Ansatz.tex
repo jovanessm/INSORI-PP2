@@ -1,19 +1,85 @@
-\chapter{Bestehende Ansätze}
+\chapter{Bestehende Ansätze zur Wahrung digitaler Souveränität}
 \label{ch:ansatz}
 
-
-\section{EU Regulierung und Framework zur Digitalsouveränität und Cloud}
+\section{Regulatorische Ansätze der EU}
 
 \subsection{DSGVO} \cite{gdpr2016}
-Um die Datensouveränität ihre Bevölkerung innerhalb der EU zu schaffen hat in Mai 2018 die EU die Datenschutz-Grundverordnung (DSGVO) eingeführt.
+Um die Datensouveränität ihrer Bevölkerung innerhalb der EU zu schaffen, hat die EU im Mai 2018 die Datenschutz-Grundverordnung (DSGVO) eingeführt.
 Die DSGVO ist eine Verordnung der EU, die die Verarbeitung personenbezogener Daten regelt und darauf abzielt, die Privatesphäre von Einzelpersonen zu stärken.
 Sie legt Richtlinien für die Erhebung, Verarbeitung, Speicherung und Nutzung personenbezogener Informationen fest und stellt sicher, 
 dass Einzelpersonen mehr Kontrolle über ihre Daten haben. 
 Zu den wichtigsten Grundsätzen gehören Transparenz, Datenminimierung sowie das Recht auf Zugang zu personenbezogenen Daten und deren Löschung.
 
+\subsection{Digital Markets Act (DMA) und Digital Services Act (DSA)}
+    % YES — add this. DMA directly targets hyperscaler 
+    % market dominance, which is exactly your problem chapter.
+    % DSA targets platform power. Both are highly relevant.
+
+Der Digital Markets Act (DMA) \cite{bmwe2023dma} verpflichtet marktbeherrschende 
+Digitalprodukt-Anbieter zur Interoperabilität und verbietet Praktiken, 
+die den Anbieterwechsel künstlich erschweren und adressiert 
+damit direkt den im vorigen Kapitel beschriebenen Vendor Lock-In.
+Daher wird Vielfalt und fairen Wettbewerb im digitalen Märkten gefördert, 
+was eine wichtige Voraussetzung für die Plattform-Souveränität der EU darstellt.
+
+
+Der Digital Services Act (DSA) \cite{bka2022dsa} ergänzt dies auf der 
+Inhaltsebene, indem er Sorgfalts- und Transparenzpflichten  
+für Vermittlungsdienstanbieter in unserem Fall der Cloud-Anbieter 
+einführt, dadurch wird die Infrastruktursouveränität gestärkt, da 
+Kunden besser verstehen können, wie die Dienste funktionieren und welche Risiken bestehen.
+
+DSA stellt gemeinsam mit dem 
+DMA den umfassendsten regulatorischen Souveränitätsanspruch 
+der EU gegenüber US-Technologieunternehmen dar.
+
+\subsection{Data Act}
+    % The 2023 Data Act specifically addresses cloud switching,
+    % egress fees, and vendor lock-in — directly answers 
+    % your Vendor Lock-In section from chapter 3.
+
+Der Data Act ist eine Verordnung der EU zur Stärkung der Datensouveränität. 
+Ziel ist es, einen fairen und wettbewerbsfähigen 
+europäischen Datenmarkt zu schaffen, indem sie regelt, wer unter 
+welchen Bedingungen auf welche Daten zugreifen darf und auch 
+die strukturellen Machtasymmetrien zwischen großen Cloud-Anbietern 
+und ihren Kunden adressiert.
+
+Für diese Arbeit ist besonders Kapitel 6 der Verordnung relevant,
+das ein verbindliches Wechsel für 
+Cloud-Dienste einführt. Cloud-Anbieter sind verpflichtet, alle 
+vertraglichen, technischen und organisatorischen Hindernisse zu 
+beseitigen, die einen Anbieterwechsel erschweren. Beispielsweise müssen 
+sie die Datenportabilität gewährleisten, indem sie standardisierte 
+Schnittstellen und maschinelesbaren Formate bereitstellen, um den Export von Daten 
+zu erleichtern. Die bisherige Preisasymmetrie der 
+Hyperscaler (kostenfreier Dateneingang, kostenpflichtige 
+Datenausgabe) wird durch ein schrittweises Verbot der 
+Egress-Gebühren korrigiert: Ab dem 12. Januar 2027 dürfen 
+Anbieter im Kontext eines Anbieterwechsels keine 
+Transfergebühren mehr erheben. 
+
+Die DSGVO (cite voriger Kapitel) regelt die personenbezogenen Daten, 
+während Kapitel 7 der Verordnung den Transfer von 
+nicht-personenbezogenen Daten und den ungesetzlichen Datenzugriff von 
+Behörden aus Drittstaaten (cite CloudAct voriger Kapitel) adressiert, die in der Cloud gespeichert sind, sofern 
+der Zugriff nicht auf der Grundlage eines internationalen Abkommens und 
+spezifischer Bestimmungen erfolgt.
+
+\section{Technische und industriepolitische Initiativen}
+
 \subsection{Gaia-X} \cite{GaiaXOverview2025}
-Gaia-X ist ein europäisches Projekt zur Schaffung eines vertrauenswürdigen und interoperablen Daten- und Infrastruktur-Ökosystems. Ziel ist es, Datenhoheit, Sicherheit, Transparenz, Nachhaltigkeit und fairen Wettbewerb in Europa zu fördern und die Abhängigkeit von nicht-europäischen Cloud-Anbietern zu reduzieren. Kernbestandteile sind das Gaia-X Trust Framework, das Regeln, Spezifikationen und Prüfmechanismen definiert, sowie das Gaia-X Digital Clearing House (GXDCH), ein technisches System, das überprüft, ob Organisationen und Dienste die Anforderungen des Trust Frameworks erfüllen. Nach erfolgreicher Prüfung erhalten Organisationen ein Gaia-X Label bzw. verifizierbare digitale Nachweise (Verifiable Credentials), die Transparenz, Datenschutz, Sicherheit, Interoperabilität, Portabilität, Nachhaltigkeit und europäische Kontrolle dokumentieren.
+Gaia-X ist ein europäisches Projekt zur Schaffung eines vertrauenswürdigen und interoperablen Daten- und Infrastruktur-Ökosystems. Ziel ist es, Datenhoheit, Sicherheit, Transparenz, Nachhaltigkeit und fairen Wettbewerb in Europa zu fördern. Kernbestandteile sind das Gaia-X Trust Framework, das Regeln, Spezifikationen und Prüfmechanismen definiert, sowie das Gaia-X Digital Clearing House (GXDCH), ein technisches System, das überprüft, ob Organisationen und Dienste die Anforderungen des Trust Frameworks erfüllen. Nach erfolgreicher Prüfung erhalten Organisationen ein Gaia-X Label bzw. verifizierbare digitale Nachweise (Verifiable Credentials), die Transparenz, Datenschutz, Sicherheit, Interoperabilität, Portabilität, Nachhaltigkeit und europäische Kontrolle dokumentieren. Gaia-X haben viele Lighthouse-Projekte, die darauf abzielt, transparenten, vertrauten und offenen Datenaustauschplattformen zu schaffen. (cite Lighthouse-Projekte)
 
 \subsection{Cloud Sovereignty Framework} \cite{EC_CloudSovereigntyFramework_2025}
 Cloud Sovereignty Framework ist ein Framework von europäische Kommission, das die für die Bereitstellung von Cloud-Diensten relevanten Souveränitätszielen definiert.
 Mit den Objektiven kann man den Cloud Service Provider bewerten, wie gut er die erforderlichen Souveränitätskriterien durch Sovereignty Effectiveness Assurance Level (SEAL) erfüllt. die SEAL Level dient als Minimum Assurance Level, die durch Kundenspezifikation definiert werden. Die Kunden rechnen die Sovereignty Score von dem Cloud Service Provider, um auszusortieren, welche Cloud Service Provider zu ihren Souveränitätskriterien am besten passt.
+
+\section{Souveräne Cloud-Angebote der Hyperscaler}
+In diesem Teil nehmen wir nur die Beispiele von 3 größte US-Hyperscaler, Amazon Web Services (AWS), Microsoft Azure und Google Cloud, da sie den größten Marktanteil haben und die meisten Kunden in der EU bedienen (cite voriger Kapitel).
+
+\section{Europäische Cloud-Anbieter}
+
+Als Alternative zu den US-amerikanischen Hyperscalern können europäische Cloud-Anbieter betrachtet werden, wie z.B. OVHcloud, IONOS, Hetzner, Deutsche Telekom (T-Systems) und viele andere. Diese Anbieter haben ihren Hauptsitz in Europa und unterliegen daher ausschließlich europäischem Recht, einschließlich der DSGVO. Sie bieten eine Vielzahl von Cloud-Diensten an, darunter Infrastructure as a Service (IaaS), Platform as a Service (PaaS) und Software as a Service (SaaS). Durch die Nutzung europäischer Cloud-Anbieter können Organisationen in der EU ihre digitale Souveränität stärken und die Risiken im Zusammenhang mit ausländischem Regierungszugriff wie dem CLOUD Act reduzieren, da die Anbieter ihren Hauptsitz in Europa haben und deswegen DSGVO-Konform sein müssen. 
+
+Eine von den Lighthouse-Projekte von Gaia-X (cite Gaia-X voriger Kapitel, Lighthouse-Projekte, Dynamo) ist Dynamo, eine offene, transparente und vertrauenswürdige europäische B2B Cloud-Plattform. Dynamo zielt darauf ab, eine europäische Alternative zu den US-Hyperscalern zu bieten, indem es die Prinzipien von Gaia-X umsetzt und gleichzeitig die Anforderungen der europäischen Kunden erfüllt. Durch die Nutzung von Dynamo können Organisationen in der EU ihre digitale Souveränität stärken und gleichzeitig von den Vorteilen einer modernen Cloud-Infrastruktur profitieren.

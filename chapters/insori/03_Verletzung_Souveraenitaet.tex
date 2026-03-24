@@ -1,8 +1,157 @@
-\chapter{Wie wird die digitale Souveränität durch Cloud Computing verletzt?}
+\chapter{Wie wird die digitale Souveränität der EU durch Cloud Computing verletzt?}
 \label{ch:problem}
 
-- Vendor Lock-In (Wechsel zu einem anderen Cloudanbieter ist schwierig)
-- Economic Dependency
-- Technical Lock-In (Abhängigkeit von proprietären Technologien, die von Cloudanbietern bereitgestellt werden)
-- Legal Exposure (Daten in der Cloud können rechtlichen Risiken ausgesetzt sein, z.B. durch Datenschutzverletzungen oder unzureichende Sicherheitsmaßnahmen)
-- Geopolitical Leverage(Cloudanbieter können geopolitische Macht ausüben, indem sie den Zugang zu ihren Diensten einschränken oder kontrollieren, insbesondere wenn sie in Ländern mit strengen Regulierungen oder politischen Spannungen ansässig sind) as pressure tool. Parler Social Media https://academic.oup.com/pnasnexus/article/2/3/pgad035/7081430?login=false&guestAccessKey=#412131324
+Wie im vorigen Kapitel dargelegt, verspricht Cloud Computing erhebliche 
+Vorteile für die Digitalisierung. Doch diese Vorteile haben ihren Preis: 
+Die Auslagerung digitaler Infrastruktur an externe Anbieter erzeugt 
+strukturelle Abhängigkeiten, die die digitale Souveränität der EU in 
+mehreren Dimensionen gefährden.
+
+\section{Marktkonzentration und wirtschaftliche Abhängigkeit}
+% Economic dependency comes first — it's the ROOT cause.
+% Everything else flows from the fact that 3 US companies 
+% dominate the market. Establish this first.
+Der europäische Cloud-Markt ist durch eine ausgeprägte Konzentration 
+auf wenige US-amerikanische Anbieter gekennzeichnet. Die US-Hyperscaler (Amazon Web Services, Microsoft Azure und Google Cloud)
+dominieren nicht nur den globalen, sondern auch den europäischen Markt. 
+
+Laut Synergy Research Group \cite{synergy2025european} entfielen im Jahr 2024 rund 70 Prozent des 
+europäischen Cloud-Markts, der ein Volumen von 61 Milliarden Euro 
+erreichte, auf diese drei Anbieter allein. 
+
+Europäische Anbieter wie SAP, Deutsche Telekom oder OVHcloud haben 
+ihren Marktanteil in den fünf Jahren zwischen 2017 und 2022 halbiert
+von 29 Prozent auf 15 Prozent und dieser Anteil stagniert seitdem, 
+obwohl der Gesamtmarkt sich im gleichen Zeitraum versechsfacht hat. 
+
+Diese strukturelle 
+Ungleichheit ist nicht zufällig: Die Hyperscaler investieren laut 
+Synergy Research Group rund 10 Milliarden Euro pro Quartal allein in 
+europäische Infrastruktur. Für die EU bedeutet dies 
+eine tiefgreifende wirtschaftliche Abhängigkeit: Öffentliche 
+Institutionen, Unternehmen und kritische Infrastrukturen sind bei ihrer 
+Digitalisierung faktisch auf Anbieter angewiesen, die einer fremden 
+Rechtsordnung unterliegen und deren strategische Entscheidungen 
+außerhalb europäischer Einflusssphäre getroffen werden.
+
+\section{Vendor Lock-In und technische Abhängigkeit}
+% Technical lock-in is the MECHANISM that makes economic 
+% dependency sticky. Once you're in, you can't leave easily.
+% Natural follow-up to market concentration.
+
+Die wirtschaftliche Abhängigkeit vom US-amerikanischen Cloud-Markt wird 
+durch einen technischen Mechanismus vertieft und verstetigt: den 
+sogenannten Vendor Lock-In. 
+
+Darunter versteht man die Situation, in der (citation of lock-in definition)
+ein Nutzer so tief in die proprietären Technologien eines Anbieters 
+eingebunden ist, dass ein Wechsel zu einem anderen Anbieter technisch 
+aufwendig, betrieblich riskant und finanziell prohibitiv wird, selbst 
+dann, wenn günstigere oder souveränere Alternativen existieren. 
+
+Die Ursache liegt in der Architektur der Cloud-Dienste selbst: Hyperscaler (Citation of hyperscaler services)
+wie AWS, Azure und Google Cloud bieten proprietäre APIs und Services, Datenbankformate, 
+Serverless-Plattformen und KI-Dienste an, die nicht mit anderen Plattformen 
+kompatibel sind. 
+
+Je tiefer eine Organisation diese Dienste in ihre (citation of migration challenges)
+Infrastruktur integriert, desto mehr wird eine spätere Migration nicht 
+mehr zu einem Infrastrukturwechsel, sondern zu einer vollständigen 
+Neuentwicklung der eigenen Systeme. 
+
+Für öffentliche Institutionen 
+der EU bedeutet dies: Einmal in die Infrastruktur eines US-Hyperscalers 
+eingebunden, verlieren sie nicht nur die technische Kontrolle über ihre 
+Systeme, sondern auch die praktische Fähigkeit, diese Abhängigkeit zu 
+beenden und damit eine zentrale Voraussetzung digitaler Souveränität.
+
+\section{Rechtliche Exposition: Der US CLOUD Act}
+% Now that we're technically locked in, what are the legal 
+% consequences? This is where foreign law reaches into 
+% European data. Concrete and citable.
+
+Die technische Abhängigkeit von US-amerikanischen Cloud-Anbietern hat 
+eine unmittelbare rechtliche Konsequenz: Daten, die auf deren 
+Infrastruktur gespeichert sind, unterliegen nicht ausschließlich 
+europäischem Recht, sondern auch dem Zugriff US-amerikanischer Behörden. 
+Ermöglicht wird dies durch den \textit{Clarifying Lawful Overseas Use of 
+Data Act}, kurz CLOUD Act, der am 23. März 2018 vom US-Kongress 
+verabschiedet wurde. Das Gesetz entstand als Reaktion auf den Rechtsstreit 
+\textit{United States v. Microsoft Corporation}, in dem das FBI Zugriff 
+auf E-Mails eines Drogenhändlers verlangte, die auf Microsofts Servern 
+in Irland gespeichert waren. Microsoft verweigerte die Herausgabe mit (here citation of the case)
+dem Argument, dass US-Recht nicht auf außerhalb der USA gespeicherte 
+Daten anwendbar sei. Der CLOUD Act löste diesen Streit gesetzlich: Er (here citation of cloud act article)
+verpflichtet US-amerikanische Anbieter von Cloud-Diensten, gespeicherte 
+Daten auf behördliche Anordnung herauszugeben, unabhängig davon, ob 
+diese Daten auf Servern in den USA oder im Ausland liegen.
+
+Für die digitale Souveränität der EU stellt dies ein fundamentales 
+Problem dar, denn der CLOUD Act steht in direktem Widerspruch zur 
+Datenschutz-Grundverordnung (DSGVO). Der CLOUD Act widerspricht 
+Artikel 48 der DSGVO, der festlegt, dass Daten von EU-Bürgern nur dann 
+an ausländische Behörden übermittelt werden dürfen, wenn dies auf der 
+Grundlage eines internationalen Abkommens, etwa eines Rechtshilfe\-vertrags 
+(MLAT), erfolgt. (here citation of artikel 48)
+
+Entscheidend ist dabei, dass US-Behörden ihre Anfragen nicht an die 
+europäischen Kunden richten, sondern direkt an den Cloud-Anbieter selbst. 
+Da die USA-Cloud-Service-Provider die physische Kontrolle über die gespeicherten 
+Daten besitzen, sind sie die eigentlichen Adressaten des CLOUD Act. Der 
+europäische Kunde wie z.B eine deutsche Behörde oder ein EU-Unternehmen 
+wird dabei häufig gar nicht informiert, denn CLOUD-Act-Anordnungen können 
+mit einer Schweigepflicht verbunden sein, die dem Anbieter verbietet, den 
+betroffenen Kunden zu benachrichtigen (here citation). Das bedeutet: Daten können rechtmäßig 
+nach US-amerikanischem Recht herausgegeben werden, ohne dass der Eigentümer 
+dieser Daten jemals davon erfährt und ohne dass eine europäische Behörde 
+einbezogen wird. Dass dies keine theoretische Gefahr ist, verdeutlicht eine 
+Aussage von Anton Carniaux, dem Chefrechtsberater von Microsoft France, vor 
+dem französischen Senat: Microsoft könne nicht garantieren, dass Daten 
+europäischer Behörden nicht an die US-Regierung weitergegeben werden. (here citation)
+
+\section{Geopolitischer Hebel als politisches Druckmittel}
+% The most serious and abstract threat — saved for last.
+% Builds on all previous sections: because we're economically
+% dependent, technically locked in, and legally exposed,
+% we become politically vulnerable.
+
+Die bisher analysierten Abhängigkeiten (wirtschaftlich, technisch und 
+rechtlich) verdichten sich auf einer vierten Ebene zu einem 
+geopolitischen Risiko: Digitale Infrastruktur kann zum politischen 
+Druckmittel werden.
+
+Der Mechanismus des geopolitischen Hebels funktioniert dabei nicht 
+zwingend durch aktive Aggression, sondern durch die bloße Existenz 
+struktureller Verwundbarkeit. Wer abhängig ist, kann unter Druck gesetzt 
+werden, auch ohne dass dieser Druck je explizit ausgeübt wird. Dass 
+dieser Druck jedoch durchaus explizit ausgeübt wird, zeigen zwei 
+konkrete Vorfälle. Erstens drohten US-amerikanische Regierungsvertreter 
+der Ukraine, den Zugang zu Starlink-Satellitendiensten zu sperren, 
+sofern Kiew keinen Mineralienvertrag mit Washington abschließe. \cite{berliner2025starlink}
+Zweitens hat die Trump-Administration gegenüber der EU selbst digitale 
+Abhängigkeiten ebenfalls als Hebel eingesetzt: Sie verknüpfte 
+Zolldrohungen mit der Forderung, europäische Digitalregulierungen abzuschwächen. \cite{cnbc2025trump}
+
+
+Der Europäische Rat für Auswärtige Beziehungen (ECFR) stellt in 
+seinem Bericht vom Dezember 2025 fest, dass die Trump-Administration 
+nicht gezögert hat, wirtschaftliche und technologische Abhängigkeiten 
+anderer Länder für ihre eigenen Ziele zu instrumentalisieren \cite{ecfr2025eurostack} 
+
+Dies wird durch das offizielle Statement der US-Handelsbeauftragten 
+(USTR) vom 16. Dezember 2025 bestätigt, in dem die US-Regierung 
+ankündigte, jeden verfügbaren Hebel einzusetzen, um gegen die 
+europäischen Digitalregulierungen vorzugehen, die sie als 
+diskriminierend gegenüber amerikanischen Technologieunternehmen 
+betrachtet. \cite{ustr2025statement}
+
+Die EU befindet sich damit in einem strukturellen Dilemma: Sie ist 
+gleichzeitig regulatorischer Gegner der US-amerikanischen Technologieriesen und 
+deren größter institutioneller Kunde. Diese Kombination ist genau die 
+Konstellation, in der geopolitischer Hebel am wirksamsten ist: Je mehr 
+die EU regulatorischen Druck auf US-Hyperscaler ausübt, um die 
+europäische digitale Souveränität zu schützen, desto größer 
+ist der Anreiz, die bestehende Infrastrukturabhängigkeit als 
+Gegendruck einzusetzen. Solange die EU keine glaubwürdige 
+Alternative aufgebaut hat, bleibt diese Asymmetrie bestehen und 
+damit die fundamentale Verletzlichkeit ihrer digitalen Souveränität.
