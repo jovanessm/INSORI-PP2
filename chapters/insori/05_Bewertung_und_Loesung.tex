@@ -3,24 +3,176 @@
 \section{Kritische Bewertung der bestehenden Ansätze}
 \label{ch:kritische-bewertung}
 
-- DMA, DSA, DataAct solves vendor lock in to a certain degree, us hyperscaler still dominates the market, because they have the scale and resources, that european providers can't match. a full sovereignty is not achievable, there still things that definitely not worth it to be sovereign, like nvidia chip or tsmc monopol. us hyperscaler can profits from the market dominance through economies of scale. 
-- Data Act solves Dataportability and Egress Fees, but not application portability (propriotäre Anwendung, wie AWS Lambda), Daten können exportiert, aber Anwendung muss neuentwickelt werden.
-- data Act only address nicht personen bezogenen Daten, personenbezogene Daten still falls to dsgvo, which means, that the cloud act widerspruch is still there. Es ändert nichts an der Jurisdiktion über das Mutterunternehmen Der CLOUD Act greift auf Ebene des US-Mutterkonzerns, nicht auf Ebene der EU-Tochtergesellschaft. Solange AWS, Microsoft und Google US-amerikanische Unternehmen sind, unterliegen sie dem CLOUD Act,unabhängig davon, was der Data Act vorschreibt. 
--  Zudem gilt das Egress-Verbot ausschließlich im Kontext eines vollständigen Anbieterwechsels, laufende Datentransferkosten im Cloud-Betrieb bleiben weiterhin zulässig. 
-- the effort of gaining sovereignty through regulation like dma dsa data act may actually work, we see the impact of it already: since digital sovereignty has become a popular topic in the eu, hyperscaler has been working on to be compliant with the eu regulation (cite souveräne cloud angebote). on the other hand, the regulation is like a double edge sword for the eu, whereas the regulation can hinder the innovation and competitiveness of digital transformation in the eu. in the section (citate geopolitischer hebel voriger kapitel)we have also talked about the fact, that digital regulation has been discriminating the us hyperscaler.
+Die im vorigen Kapitel vorgestellten regulatorischen und 
+technischen Ansätze stellen insgesamt einen erheblichen 
+Fortschritt dar, sie lösen das Souveränitätsproblem jedoch 
+nicht vollständig.
 
+Der Digital Markets Act, der Data Act und verwandte 
+Regulierungen reduzieren den Vendor Lock-In in wichtigen 
+Teilbereichen: Sie schaffen Wechselrechte, verbieten 
+Egress-Gebühren im Kontext von Anbieterwechseln und 
+untersagen wettbewerbswidrige Koppelungspraktiken. 
+
+Dennoch beseitigen sie nicht die fundamentale 
+Marktasymmetrie. US-amerikanische Hyperscaler verfügen 
+über Skaleneffekte, globale Infrastruktur und 
+Investitionskapazitäten, die europäische Anbieter 
+strukturell nicht erreichen können, unabhängig davon, 
+wie gut die Regulierung ist. Hinzu kommt, dass vollständige 
+digitale Souveränität in bestimmten Bereichen weder 
+realistisch noch erstrebenswert ist: Bei Halbleitern 
+etwa kontrolliert TSMC über 90 Prozent der weltweiten 
+Fertigung fortschrittlicher Chips, und Nvidias Dominanz 
+im KI-Chip-Markt ist vergleichbar ausgeprägt. (probably microsoft in saas worth noting)
+
+Eine 
+europäische Souveränität auf diesen Ebenen zu erzwingen 
+würde massive Investitionen erfordern, die in keinem Verhältnis 
+zum Nutzen stehen. Vollständige Souveränität ist damit 
+keine sinnvolle politische Zielsetzung. Angestrebtes 
+Ziel muss stattdessen eine \textit{selektive Souveränität} 
+in strategisch kritischen Bereichen sein.
+
+Der Data Act adressiert die Portabilität von Daten,
+nicht jedoch die Portabilität von Anwendungen. Ein 
+Unternehmen, das tief in proprietäre Cloud-Dienste 
+wie AWS Lambda, Google BigQuery oder Azure Cognitive 
+Services integriert ist, kann seine Daten zwar 
+standardkonform exportieren. Die darauf aufbauende 
+Anwendungslogik muss jedoch vollständig neu entwickelt 
+werden, da diese Dienste keine standardisierten 
+Äquivalente bei anderen Anbietern haben. Zudem gilt 
+das Egress-Verbot ausschließlich im Kontext eines 
+vollständigen Anbieterwechsels. Laufende 
+Datentransferkosten im Cloud-Betrieb bleiben weiterhin 
+zulässig.
+
+Die rechtliche Exposition gegenüber dem US CLOUD Act 
+bleibt durch den Data Act strukturell ungelöst. Zwar 
+enthält Artikel 32 des Data Acts Schutzklauseln gegen 
+den Zugriff von Drittstaatsbehörden auf 
+nicht-personenbezogene Daten. Personenbezogene Daten 
+fallen weiterhin ausschließlich unter die DSGVO, sodass 
+der in Kapitel \ref{ch:problem} beschriebene 
+Jurisdiktionskonflikt fortbesteht. Entscheidend ist 
+dabei: Der CLOUD Act greift auf Ebene des 
+US-Mutterkonzerns, nicht auf Ebene der EU-Tochtergesellschaft. 
+Solange AWS, Microsoft und Google US-amerikanische 
+Unternehmen sind, unterliegen sie dem CLOUD Act, 
+unabhängig davon, was europäisches Recht vorschreibt 
+und unabhängig davon, ob ihre Daten auf europäischen 
+Servern gespeichert sind.
+
+Schließlich ist die Regulierungsstrategie der EU ein 
+zweischneidiges Schwert. Einerseits zeigt sie messbare 
+Wirkung: Da digitale Souveränität zu einem zentralen 
+politischen Thema geworden ist, haben die Hyperscaler 
+begonnen, sich aktiv um Compliance zu bemühen und 
+souveräne Cloud-Angebote zu entwickeln (cite souveräne cloud angebote). 
+Andererseits birgt intensive Regulierung das Risiko, 
+Innovation und die Wettbewerbsfähigkeit der digitalen 
+Transformation in der EU zu hemmen (cite gipfel für digitale souveränität) und erzeugt, 
+wie in Kapitel (cite problem) gezeigt, geopolitischen 
+Gegendruck: Die US-Regierung hat die europäische 
+Digitalregulierung explizit als diskriminierend gegenüber 
+US-amerikanischen Technologieunternehmen bezeichnet und 
+mit Gegenmassnahmen gedroht (cite trump). 
+Regulierung schützt also einerseits die digitale 
+Souveränität und gefährdet sie andererseits, indem 
+sie zum Hebel geopolitischer Auseinandersetzungen wird.
 
 \section{Lösungsansatz}
 \label{ch:loesungsansatz}
 
-full sovereign aws china
-https://www.uscc.gov/sites/default/files/Research/DGI_Red%20Cloud%20Rising_2014.pdf
+Aus der vorangegangenen Analyse ergibt sich, dass keine 
+einzelne Maßnahme die digitale Souveränität der EU 
+gegenüber Cloud-Abhängigkeiten vollständig wiederherstellen 
+kann. Ein realistischer Lösungsansatz muss daher mehrere 
+komplementäre Strategien kombinieren, mit dem Ziel nicht 
+vollständiger Unabhängigkeit, sondern verwalteter 
+Abhängigkeit mit glaubwürdigen Alternativen.
 
-opensource tools
+\subsection{Strukturelle Trennung als Maximalmodell: 
+Das Beispiel China} (cite china cloud sovereignty)
 
-hybrid cloud einsatz 
+Das radikale Modell digitaler Cloud-Souveränität hat 
+China realisiert: Durch gesetzliche Vorschriften wurde 
+ausländischen Cloud-Anbietern der direkte Betrieb von 
+Infrastruktur auf chinesischem Boden untersagt. 
+US-amerikanische Anbieter wie AWS und Microsoft mussten 
+ihre Technologie an chinesische Partner lizenzieren und 
+die operative Kontrolle vollständig abgeben. Amazon 
+besitzt in China weder die Hardware noch hat es Zugriff 
+auf die dort gespeicherten Daten. 
 
-european cloud provider
+Das Ergebnis ist eine genuine strukturelle Souveränität: 
+Kein CLOUD-Act-Beschluss kann auf Daten zugreifen, über 
+die Amazon operativ keine Kontrolle mehr hat. Dieses 
+Modell ist für die EU aus mehreren Gründen nicht 
+direkt übertragbar: Es erfordert massive staatliche 
+Investitionen in heimische Alternativen, schränkt den 
+Wettbewerb ein und würde erheblichen geopolitischen 
+Widerstand auslösen. Es verdeutlicht jedoch, dass 
+echte strukturelle Souveränität möglich ist, wenn 
+der politische Wille vorhanden ist, sie durch 
+Gesetz durchzusetzen.
 
-client side encryption for critical data 
+\subsection{Bevorzugung europäischer Cloud-Anbieter 
+für kritische Infrastruktur}
 
+Unterhalb der chinesischen Maximallösung liegt ein 
+pragmatischerer Ansatz: Die EU und ihre Mitgliedstaaten 
+könnten gesetzlich vorschreiben, dass bestimmte 
+Kategorien kritischer Infrastruktur wie z.B öffentliche 
+Verwaltung, Gesundheitswesen, Verteidigung, 
+Justizsysteme ausschließlich bei europäischen 
+Cloud-Anbietern betrieben werden dürfen. Europäische 
+Anbieter wie OVHcloud, Hetzner oder IONOS sind für 
+diese Standardanwendungsfälle vollwertige Alternativen 
+und unterliegen keiner fremden Rechtsordnung. Der 
+ECFR empfiehlt genau diesen Ansatz: Europäische 
+Technologien müssen das Rückgrat der kritischsten 
+staatlichen Funktionen bilden -- auch wenn für 
+weniger sensible Bereiche weiterhin US-Hyperscaler 
+genutzt werden können (cite ecfr2025eurostack). 
+Dieser Ansatz entspricht dem Konzept der \textit{selektiven 
+Souveränität}: Nicht alles muss souverän sein,
+aber das Kritischste muss es sein.
+
+\subsection{Hybrid Cloud und Open-Source-Technologien 
+zur Reduktion von Lock-In}
+
+Für Organisationen, die auf die Leistungsfähigkeit 
+der Hyperscaler angewiesen sind, bietet ein 
+\textit{Hybrid-Cloud-Ansatz} eine praktische 
+Zwischenlösung: Kritische und sensible Daten werden 
+auf europäischer oder privater Infrastruktur betrieben, 
+während weniger sensitive Workloads auf Public-Cloud-Diensten 
+laufen. Ergänzt wird dies durch den Einsatz von 
+agnostischen Open-Source-Technologien wie Kubernetes, OpenStack 
+oder Apache Kafka, die keine Bindung an einen 
+spezifischen Anbieter erzeugen und einen späteren 
+Wechsel erheblich erleichtern. Wer proprietäre 
+Anbieter-Dienste durch standardisierte Open-Source-Äquivalente 
+ersetzt, behält die Anwendungsportabilität, die der 
+Data Act (cite data act) allein nicht gewährleisten kann.
+
+\subsection{Clientseitige Verschlüsselung 
+für kritische Daten}
+
+Eine ergänzende technische Maßnahme, die unabhängig 
+vom Anbieter wirksam ist, ist die \textit{clientseitige 
+Verschlüsselung}: Daten werden verschlüsselt, bevor 
+sie in die Cloud übertragen werden, und der 
+Verschlüsselungsschlüssel verbleibt ausschließlich 
+beim Kunden, nicht beim Cloud-Anbieter. Dies bedeutet: 
+Selbst wenn ein US-Gericht AWS per CLOUD Act zur 
+Herausgabe von Daten verpflichtet, erhält die Behörde 
+ausschließlich unlesbare verschlüsselte Daten. 
+Clientseitige Verschlüsselung löst das 
+Jurisdiktionsproblem nicht auf rechtlicher Ebene.
+Sie macht es jedoch auf technischer Ebene weitgehend 
+irrelevant. Für besonders sensitive staatliche und 
+institutionelle Daten ist dies eine der wirksamsten 
+und unmittelbar umsetzbaren Schutzmaßnahmen.
