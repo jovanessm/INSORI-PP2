@@ -24,7 +24,7 @@ digitale Souveränität in bestimmten Bereichen weder
 realistisch noch erstrebenswert ist: Bei Halbleitern 
 etwa kontrolliert TSMC über 90 Prozent der weltweiten 
 Fertigung fortschrittlicher Chips, und Nvidias Dominanz 
-im KI-Chip-Markt ist vergleichbar ausgeprägt. (probably microsoft in saas worth noting)
+im KI-Chip-Markt ist vergleichbar ausgeprägt.
 
 Eine 
 europäische Souveränität auf diesen Ebenen zu erzwingen 
@@ -50,19 +50,12 @@ zulässig.
 
 Die rechtliche Exposition gegenüber dem US CLOUD Act 
 bleibt durch den Data Act strukturell ungelöst. Zwar 
-enthält Artikel 32 des Data Acts Schutzklauseln gegen (cite data act this article)
+enthält Artikel 32 des Data Acts Schutzklauseln gegen 
 den Zugriff von Drittstaatsbehörden auf 
-nicht-personenbezogene Daten. Personenbezogene Daten 
+nicht-personenbezogene Daten \ref{sec:data-act}. Personenbezogene Daten 
 fallen weiterhin ausschließlich unter die DSGVO, sodass 
-der in Kapitel \ref{ch:problem} beschriebene 
-Jurisdiktionskonflikt fortbesteht. Entscheidend ist 
-dabei: Der CLOUD Act greift auf Ebene des 
-US-Mutterkonzerns, nicht auf Ebene der EU-Tochtergesellschaft. 
-Solange AWS, Microsoft und Google US-amerikanische 
-Unternehmen sind, unterliegen sie dem CLOUD Act, 
-unabhängig davon, was europäisches Recht vorschreibt 
-und unabhängig davon, ob ihre Daten auf europäischen 
-Servern gespeichert sind.
+der in Kapitel \ref{sec:cloudact} beschriebene 
+Jurisdiktionskonflikt fortbesteht. 
 
 Auch bei der Nutzung souveräner Cloud-Angebote der Hyperscaler \ref{sec:sovereignhyperscaler}
 bleibt unklar, ob EU-Daten tatsächlich vor dem Zugriff 
@@ -72,12 +65,12 @@ europäische Rechtspersonen, doch als Tochtergesellschaften
 oder Technologiepartner von US-Mutterkonzernen bleiben 
 sie deren konzernrechtlicher Struktur verhaftet. 
 Erwägungsgrund 48 DSGVO erlaubt konzerninterne 
-Datenweitergaben für administrative Zwecke innerhalb 
+Datenweitergaben innerhalb 
 einer Unternehmensgruppe, die konzernrechtliche 
 Verbindung zwischen der AWS European Sovereign Cloud GmbH 
 und Amazon.com Inc. besteht fort, was den strukturellen 
 Zugriffspfad für den CLOUD Act offen lässt 
-\cite[Erw.~48]{gdpr2016}. Bei den Partnermodellen 
+\cite[Erw.48]{gdpr2016}. Bei den Partnermodellen 
 von T-Systems mit Google und Delos mit Microsoft ist die 
 Situation komplexer: Da europäische Partner die 
 operative Kontrolle und in einigen Konfigurationen 
@@ -99,10 +92,7 @@ Andererseits birgt intensive Regulierung das Risiko,
 Innovation und die Wettbewerbsfähigkeit der digitalen 
 Transformation in der EU zu hemmen und erzeugt \cite{draghi2024competitiveness}, 
 wie in Kapitel \ref{sec:geopolitischerhebel} gezeigt, geopolitischen 
-Gegendruck: Die US-Regierung hat die europäische 
-Digitalregulierung explizit als diskriminierend gegenüber 
-US-amerikanischen Technologieunternehmen bezeichnet und 
-mit Gegenmassnahmen gedroht. 
+Gegendruck.
 Regulierung schützt also einerseits die digitale 
 Souveränität und gefährdet sie andererseits, indem 
 sie zum Hebel geopolitischer Auseinandersetzungen wird.
@@ -128,8 +118,8 @@ Infrastruktur auf chinesischem Boden untersagt.
 US-amerikanische Anbieter wie AWS und Microsoft mussten 
 ihre Technologie an chinesische Partner lizenzieren und 
 die operative Kontrolle vollständig abgeben. Amazon 
-besitzt in China weder die Hardware noch hat es Zugriff 
-auf die dort gespeicherten Daten im Gegensatz zu dem Sovereign Hyperscaler Angebote \ref{sec:sovereignhyperscaler}. 
+hat in China weder Zugriff auf die dort gespeicherten Daten
+noch besitzt er die Hardware im Gegensatz zu dem Sovereign Hyperscaler Angebote \ref{sec:sovereignhyperscaler}. 
 
 Das Ergebnis ist eine genuine strukturelle Souveränität: 
 Kein CLOUD-Act-Beschluss kann auf Daten zugreifen, über 
@@ -172,7 +162,7 @@ Für Organisationen, die auf die Leistungsfähigkeit
 der Hyperscaler angewiesen sind, bietet ein 
 \textit{Hybrid-Cloud-Ansatz} eine praktische 
 Zwischenlösung: Kritische und sensible Daten werden 
-auf europäischer oder privater Infrastruktur betrieben, 
+auf privater Infrastruktur betrieben, 
 während weniger sensitive Workloads auf Public-Cloud-Diensten 
 laufen. Ergänzt wird dies durch den Einsatz von 
 agnostischen Open-Source-Technologien wie Kubernetes, OpenStack 
