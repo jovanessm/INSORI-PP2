@@ -50,7 +50,7 @@ zulässig.
 
 Die rechtliche Exposition gegenüber dem US CLOUD Act 
 bleibt durch den Data Act strukturell ungelöst. Zwar 
-enthält Artikel 32 des Data Acts Schutzklauseln gegen 
+enthält Artikel 32 des Data Acts Schutzklauseln gegen (cite data act this article)
 den Zugriff von Drittstaatsbehörden auf 
 nicht-personenbezogene Daten. Personenbezogene Daten 
 fallen weiterhin ausschließlich unter die DSGVO, sodass 
@@ -64,20 +64,45 @@ unabhängig davon, was europäisches Recht vorschreibt
 und unabhängig davon, ob ihre Daten auf europäischen 
 Servern gespeichert sind.
 
+Auch bei der Nutzung souveräner Cloud-Angebote der Hyperscaler \ref{sec:sovereignhyperscaler}
+bleibt unklar, ob EU-Daten tatsächlich vor dem Zugriff 
+US-amerikanischer Behörden geschützt sind. Zwar agieren 
+AWS European Sovereign Cloud, Delos (Microsoft) und T-Systems (Google) als 
+europäische Rechtspersonen, doch als Tochtergesellschaften 
+oder Technologiepartner von US-Mutterkonzernen bleiben 
+sie deren konzernrechtlicher Struktur verhaftet. 
+Erwägungsgrund 48 DSGVO erlaubt konzerninterne 
+Datenweitergaben für administrative Zwecke innerhalb 
+einer Unternehmensgruppe, die konzernrechtliche 
+Verbindung zwischen der AWS European Sovereign Cloud GmbH 
+und Amazon.com Inc. besteht fort, was den strukturellen 
+Zugriffspfad für den CLOUD Act offen lässt 
+\cite[Erw.~48]{gdpr2016}. Bei den Partnermodellen 
+von T-Systems mit Google und Delos mit Microsoft ist die 
+Situation komplexer: Da europäische Partner die 
+operative Kontrolle und in einigen Konfigurationen 
+auch die Verschlüsselungsschlüssel halten, wäre 
+ein CLOUD-Act-Beschluss technisch schwerer 
+durchsetzbar. Die zugrunde liegende Software und 
+Infrastruktur stammt jedoch weiterhin von 
+US-amerikanischen Konzernen, sodass eine vollständige 
+rechtliche Entkopplung nicht erreicht wird 
+\cite{microsoft_sovereign, google_tsystems}.
+
 Schließlich ist die Regulierungsstrategie der EU ein 
 zweischneidiges Schwert. Einerseits zeigt sie messbare 
 Wirkung: Da digitale Souveränität zu einem zentralen 
 politischen Thema geworden ist, haben die Hyperscaler 
 begonnen, sich aktiv um Compliance zu bemühen und 
-souveräne Cloud-Angebote zu entwickeln (cite souveräne cloud angebote). 
+souveräne Cloud-Angebote zu entwickeln \ref{sec:sovereignhyperscaler}. 
 Andererseits birgt intensive Regulierung das Risiko, 
 Innovation und die Wettbewerbsfähigkeit der digitalen 
-Transformation in der EU zu hemmen (cite gipfel für digitale souveränität) und erzeugt, 
-wie in Kapitel (cite problem) gezeigt, geopolitischen 
+Transformation in der EU zu hemmen und erzeugt \cite{draghi2024competitiveness}, 
+wie in Kapitel \ref{sec:geopolitischerhebel} gezeigt, geopolitischen 
 Gegendruck: Die US-Regierung hat die europäische 
 Digitalregulierung explizit als diskriminierend gegenüber 
 US-amerikanischen Technologieunternehmen bezeichnet und 
-mit Gegenmassnahmen gedroht (cite trump). 
+mit Gegenmassnahmen gedroht. 
 Regulierung schützt also einerseits die digitale 
 Souveränität und gefährdet sie andererseits, indem 
 sie zum Hebel geopolitischer Auseinandersetzungen wird.
@@ -94,7 +119,7 @@ vollständiger Unabhängigkeit, sondern verwalteter
 Abhängigkeit mit glaubwürdigen Alternativen.
 
 \subsection{Strukturelle Trennung als Maximalmodell: 
-Das Beispiel China} (cite china cloud sovereignty)
+Das Beispiel China} \cite{ragland2014redcloud}
 
 Das radikale Modell digitaler Cloud-Souveränität hat 
 China realisiert: Durch gesetzliche Vorschriften wurde 
@@ -104,7 +129,7 @@ US-amerikanische Anbieter wie AWS und Microsoft mussten
 ihre Technologie an chinesische Partner lizenzieren und 
 die operative Kontrolle vollständig abgeben. Amazon 
 besitzt in China weder die Hardware noch hat es Zugriff 
-auf die dort gespeicherten Daten. 
+auf die dort gespeicherten Daten im Gegensatz zu dem Sovereign Hyperscaler Angebote \ref{sec:sovereignhyperscaler}. 
 
 Das Ergebnis ist eine genuine strukturelle Souveränität: 
 Kein CLOUD-Act-Beschluss kann auf Daten zugreifen, über 
@@ -133,9 +158,9 @@ diese Standardanwendungsfälle vollwertige Alternativen
 und unterliegen keiner fremden Rechtsordnung. Der 
 ECFR empfiehlt genau diesen Ansatz: Europäische 
 Technologien müssen das Rückgrat der kritischsten 
-staatlichen Funktionen bilden -- auch wenn für 
+staatlichen Funktionen bilden, auch wenn für 
 weniger sensible Bereiche weiterhin US-Hyperscaler 
-genutzt werden können (cite ecfr2025eurostack). 
+genutzt werden können \cite{ecfr2025eurostack}. 
 Dieser Ansatz entspricht dem Konzept der \textit{selektiven 
 Souveränität}: Nicht alles muss souverän sein,
 aber das Kritischste muss es sein.
@@ -156,7 +181,7 @@ spezifischen Anbieter erzeugen und einen späteren
 Wechsel erheblich erleichtern. Wer proprietäre 
 Anbieter-Dienste durch standardisierte Open-Source-Äquivalente 
 ersetzt, behält die Anwendungsportabilität, die der 
-Data Act (cite data act) allein nicht gewährleisten kann.
+Data Act \ref{sec:data-act} allein nicht gewährleisten kann.
 
 \subsection{Clientseitige Verschlüsselung 
 für kritische Daten}
@@ -167,7 +192,7 @@ Verschlüsselung}: Daten werden verschlüsselt, bevor
 sie in die Cloud übertragen werden, und der 
 Verschlüsselungsschlüssel verbleibt ausschließlich 
 beim Kunden, nicht beim Cloud-Anbieter. Dies bedeutet: 
-Selbst wenn ein US-Gericht AWS per CLOUD Act zur 
+Selbst wenn ein US-Gericht US-amerikanisches Cloud Provider per CLOUD Act zur 
 Herausgabe von Daten verpflichtet, erhält die Behörde 
 ausschließlich unlesbare verschlüsselte Daten. 
 Clientseitige Verschlüsselung löst das 
