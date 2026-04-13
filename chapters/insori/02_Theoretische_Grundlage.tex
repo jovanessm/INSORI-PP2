@@ -1,7 +1,7 @@
 \chapter{Theoretische Grundlage}
 \label{ch:theorie}
 \section{Digitale Souveränität}
-Der Begriff ``Souveränität'' bedeutet laut Stanford die höchste Autorität eines bestimmten Gebiets \cite{sep-sovereignty}. 
+Der Begriff ``Souveränität'' bedeutet laut Daniel Philpott von Stanford die höchste Autorität eines bestimmten Gebiets \cite{sep-sovereignty}. 
 Überträgt man dieses Konzept auf den digitalen Raum, stellt sich die Frage, welche Autorität über welches Gebiet tatsächlich Macht ausüben kann.
 Das Internet ist ein globale Netzwerk. 
 Die Regulierung des Internets geht daher über die nationale Grenzen und damit über die traditionale staatliche Souveränität hinaus \cite{Barlow1996Independence}. 
@@ -15,17 +15,17 @@ einen Staat beziehen.
 \end{itemize}
 Außerdem kann auch die digitale Souveränität in verschiedenen Aspekten unterteilt\cite{BeyererMQuadeReussner2018}: 
 \begin{itemize}
-    \item Infra\-struk\-tur\-sou\-ver\-ä\-ni\-tät: technische Infrastrukturen vertrauenswürdig herzustellen, 
+    \item Infra\-struk\-tur\-sou\-ver\-ä\-ni\-tät: Technische Infrastrukturen vertrauenswürdig herzustellen, 
     prüfen, und sie so zu betreiben, dass die darauf angebotenen Dienste 
-    vertrauenswürdig sein können
+    vertrauenswürdig sein können.
     \item Datensouveränität: Fähigkeit, informiert und selbstbestimmt zu entscheiden, 
     wie und von wem Informationen über die eigene Person oder Institution, eigene 
     Handlungen oder Produkte erhoben, verarbeitet und weitergegeben werden.
-    \item Entscheidungssouveränität: die Möglichkeit, Ursprünge und Begründungen für 
+    \item Entscheidungssouveränität: Die Möglichkeit, Ursprünge und Begründungen für 
     Entscheidungen und Handlungsempfehlungen autonomer Systeme und Assistenten nachzuvollziehen
     und diese gegebenenfalls durch menschliches Eingreifen zu beeinflussen.
-    \item Platt\-form\-sou\-ver\-ä\-ni\-tät: die Markt\-macht der gro\-ßen Unternehmen durch Regulierung und 
-    bewusste Kundenentscheidungen auf ein Maß, in dem ein fairer Wettbewerb möglich bleibt
+    \item Platt\-form\-sou\-ver\-ä\-ni\-tät: Die Markt\-macht der gro\-ßen Unternehmen durch Regulierung und 
+    bewusste Kundenentscheidungen auf ein Maß, in dem ein fairer Wettbewerb möglich bleibt.
 \end{itemize}
 
 Diese vier Dimensionen der digitale Souveränität setzen voraus, dass Staaten und 
@@ -38,31 +38,31 @@ von externen Anbietern betrieben wird.
 \section{Cloud-Computing}
 Cloud-Computing bedeutet, dass die Datenverarbeitung nicht nur auf lokalen Computern erfolgt,
 sondern in zentralisierten Einrichtungen durch externe Rechen- und Speicheranbieter \cite{magoules2013cloud}.
-Es erlaubt allgegenwärtiger, bequemer und On-Demand Zugriff auf verteilte Rechenresourcen durch Netzwerk, 
+Es erlaubt allgegenwärtiger, bequemer und On-Demand-Zugriff auf verteilte Rechenresourcen durch Netzwerk, 
 die schnell zu provisionieren und zu entlassen \cite{mell2011nist}.
 
-Es gibt mehrere Möglichkeit, wie man eine Cloud\-infrastuktur nutzt \cite{mell2011nist}:
+Es gibt mehrere Möglichkeit, Cloudinfrastruktur zu nutzen \cite{mell2011nist}:
 \begin{itemize}
-    \item Private Cloud: die Cloud-Infrastruktur wird ausschließlich für eine Organisation bereitgestellt und von dieser betrieben.
-    \item Public Cloud: die Cloud-Infrastruktur wird für die offene Nutzung bereitgestellt und von einem Drittanbieter betrieben.
-    \item Hybrid Cloud: eine Kombination aus Private und Public Cloud, bei der eine Organisation die Flexibilität der Public Cloud nutzt, aber auch die erhöhte Sicherheit und Compliance der Private Cloud.
+    \item Private Cloud: Die Cloud-Infrastruktur wird ausschließlich für eine Organisation bereitgestellt und von dieser betrieben.
+    \item Public Cloud: Die Cloud-Infrastruktur wird für die offene Nutzung bereitgestellt und von einem Drittanbieter betrieben.
+    \item Hybrid Cloud: Eine Kombination aus Private und Public Cloud, bei der eine Organisation die Flexibilität der Public Cloud nutzt, aber auch die erhöhte Sicherheit und Compliance der Private Cloud.
 \end{itemize}
 In dieser Arbeit wird der Umfang nur auf Public Cloud eingeschränkt.
 
 Das Cloud-Computing Modell kann man durch 5 Charakteristika erkennen \cite{mell2011nist}:
 \begin{itemize}
-    \item On-Demand Self-Service: der Cloud-Provider Kunde kann selber Rechenresourcen provisionieren wie 
+    \item On-Demand Self-Service: Der Cloud-Provider-Kunde kann selber Rechenresourcen laufen lassen wie 
     z.B Server oder Netzwerkspeicher, ohne der Bedarf von menschlichen Interaktion.
-    \item Broad network access: die Cloud-Dienste sind durch Netzwerk mit standartisierten Mechanismus erreichbar.
-    \item Resource pooling: die Rechenresourcen sind konzentriert in einer Lage, um die Nutzer von den Cloud-Diensten 
-    zu bedienen durch Multi-Tenant-Modell.
-    \item Rapid elasticity: Rechenresourcen können elastisch und auch automatisch provisioniert und entlassen, 
+    \item Broad network access: Die Cloud-Dienste sind durch Netzwerk mit standartisierten Mechanismus erreichbar.
+    \item Resource pooling: Die Rechenresourcen sind aggregiert in einer zentralen Lage (Rechenzentren/Data Center), um die Nutzer von den Cloud-Diensten 
+    zu bedienen durch Multi-Tenant-Modell (Mehrere Kunden mieten den gleichen Rechner und nutzen nur so viele, wie sie benötigen).
+    \item Rapid elasticity: Rechenresourcen können elastisch und auch automatisch provisioniert und entlassen werden, 
     um die Ressourcen nach Bedarf zu skalieren.
-    \item Measured Service: Dienste können durch Metriken gemessen werden, um die Ressourcen zu optimieren und Transparenz 
-    an Kunden anzubieten.
+    \item Measured Service: Dienste können durch Metriken gemessen werden, um die Ressourcen zu optimieren und den Kunden Transparenz 
+    anzubieten.
 \end{itemize}
 
-Die Charakteristika machen Cloud-Computing zu einem attraktiven Werkzeug für die Digitalisierung. 
+Diese Charakteristika machen Cloud-Computing zu einem attraktiven Werkzeug für die Digitalisierung. 
 Jedoch bedeutet die Auslagerung der Infrastruktur an externe Anbieter gleichzeitig 
 einen Kontrollverlust, der alle vier Dimensionen der digitalen Souveränität direkt 
 betrifft.
